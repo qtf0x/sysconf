@@ -234,6 +234,7 @@
       commit.gpgsign = true;
       tag.gpgsign = true;
       init.defaultBranch = "main";
+      push.autoSetupRemote = true;
     };
   };
 
