@@ -33,6 +33,9 @@ in
           mpv
           wget
           iosevka-bin
+          obsidian
+          zotero
+          tmux
         ];
 
         sessionVariables = {
