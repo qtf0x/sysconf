@@ -1,3 +1,5 @@
+TODO
+
 Split pakcage installations/configs between system/user/home manager in a reasonable manner.
 
 Transfer basic Neovim config to home manager.
@@ -13,5 +15,7 @@ Figure out why Kitty background blur setting doesn't work.
 Install and configure a launcher.
 
 Configure tmux.
+
+DONE
 
 Remove headers/borders from windows, add gaps.

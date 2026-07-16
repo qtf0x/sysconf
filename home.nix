@@ -29,6 +29,14 @@ in
             mode = "1920x1080@60hz";
             bg = "/home/qtf0x/Downloads/geese-rock-band.jpg fill";
           };
+
+          window.titlebar = false;
+          gaps = {
+            #inner = 12;
+            #outer = 5;
+            smartBorders = "on";
+            #smartGaps = "on";
+          };
         };
       };
 
