@@ -227,6 +227,7 @@
         email = "aster@slware.org";
         signingkey = "0BFFAD39C2D4FBD0";
       };
+
       gpg.program = "gpg";
       commit.gpgsign = true;
       tag.gpgsign = true;
