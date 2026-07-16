@@ -1,0 +1,17 @@
+Split pakcage installations/configs between system/user/home manager in a reasonable manner.
+
+Transfer basic Neovim config to home manager.
+
+Transfer more complex Neovim config to home manager using Nixvim.
+
+Find a way to rotate background images automatically.
+
+Fix brightness, volume, lock, screenshot keys.
+
+Figure out why Kitty background blur setting doesn't work.
+
+Install and configure a launcher.
+
+Configure tmux.
+
+Remove headers/borders from windows, add gaps.
