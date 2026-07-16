@@ -156,7 +156,6 @@
       "wheel"
     ];
     packages = with pkgs; [
-      #firefox
       neovim
       kitty
       thunderbird
@@ -181,18 +180,6 @@
   };
 
   fonts.fontDir.enable = true;
-
-  # Install firefox.
-  #programs.firefox.enable = true;
-
-  # Set Firefox as the default browser.
-  #xdg.mime.defaultApplications = {
-  #  "text/html" = "firefox.desktop";
-  #  "x-scheme-handler/http" = "firefox.desktop";
-  #  "x-scheme-handler/https" = "firefox.desktop";
-  #  "x-scheme-handler/about" = "firefox.desktop";
-  #  "x-scheme-handler/unknown" = "firefox.desktop";
-  #};
 
   programs.bash.enable = true;
 
