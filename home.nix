@@ -10,7 +10,7 @@ in
 
   home-manager = {
     useGlobalPkgs = true;
-    users."qtf0x" = { pkgs, ... }: {
+    users.qtf0x = { pkgs, ... }: {
       wayland.windowManager.sway = {
         enable = true;
         wrapperFeatures.gtk = true; # Fixes common issues with GTK 3 apps
@@ -44,13 +44,21 @@ in
 
       home = {
         packages = with pkgs; [
+          # Media
+          firefox
           mpv
+
+          # Development tools
           wget
+          tmux
+
+          # Fonts, colors, etc.
           iosevka-bin
+          fastfetch
+
+          # Productivity
           obsidian
           zotero
-          tmux
-          firefox
 
           # Sway extensions
           swaybg
@@ -78,7 +86,7 @@ in
             dynamic_background_opacity = true;
             enable_audio_bell = false;
             mouse_hide_wait = "-1.0";
-            window_padding_width = 10;
+            window_padding_width = 5;
             background_opacity = "0.85";
             background_blur = 64;
           };
@@ -89,6 +97,7 @@ in
           shellAliases = {
             nv = "nvim";
             ls = "ls -lah --color";
+            tree = "tree -la";
           };
 
           initExtra = ''
