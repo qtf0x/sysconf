@@ -11,12 +11,17 @@
     ./home.nix
   ];
 
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  # Use latest kernel with Zen patches.
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 
   # Swap partition
   boot.initrd.systemd.enable = true; # for lz4
@@ -114,15 +119,6 @@
         user = "greeter";
       };
     };
-  };
-
-  # Enable the X11 windowing system.
-  #services.xserver.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb = {
-    layout = "us";
-    options = "caps:escape";
   };
 
   # Enable CUPS to print documents.
@@ -250,5 +246,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "26.05"; # Did you read the comment?
-
 }
