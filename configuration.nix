@@ -175,7 +175,14 @@
     ];
   };
 
-  fonts.fontDir.enable = true;
+  fonts = {
+    fontDir.enable = true;
+    packages = with pkgs; [
+      iosevka-bin
+      (iosevka-bin.override { variant = "Aile"; })
+      (iosevka-bin.override { variant = "Etoile"; })
+    ];
+  };
 
   programs.bash.enable = true;
 

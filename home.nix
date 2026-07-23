@@ -40,8 +40,6 @@ in
         };
       };
 
-      fonts.fontconfig.enable = true;
-
       home = {
         packages = with pkgs; [
           # Media
@@ -53,7 +51,6 @@ in
           tmux
 
           # Fonts, colors, etc.
-          iosevka-bin
           fastfetch
 
           # Productivity
