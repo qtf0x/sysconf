@@ -164,6 +164,7 @@
       rustup
       nodejs
       gimp
+      hugo
       # Neovim reqs
       git
       gnumake
